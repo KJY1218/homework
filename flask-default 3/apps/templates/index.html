@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>GET / POST</title>
+</head>
+<body>
+   <div>
+      GET : 
+      <form action="index" method="get">
+         <input type="text" name="text_get">
+         <input type="Submit" value="Submit">
+      </form>
+      <p>
+      {{variable_get}}
+      </p>
+      <p>
+      <a href="https://www.google.co.kr/?gfe_rd=cr&ei=cSbNU4TvNuaK8Qf_joH4Cw&gws_rd=ssl#newwindow=1&q={{variable_get}}">
+      Google
+      </a>
+      </p>
+      <p>
+      <a href="http://search.naver.com/search.naver?where=nexearch&query={{variable_get}}&sm=top_hty&fbm=0&ie=utf8">
+      Naver
+      </a>
+      </p>
+      <p>
+      <a href="http://search.daum.net/search?w=tot&DA=YZR&t__nil_searchbox=btn&sug=&o=&q={{variable_get}}">
+      Daum
+      </a>
+      </p>
+   </div>
+
+   <div>
+      POST : 
+      <form action="index" method="post">
+         <input type="text" name="text_post">
+         <input type="Submit" value="Submit">
+      </form>
+      <p>
+      {{ variable_post }}
+      </p>
+      <p>
+      <a href="https://www.google.co.kr/?gfe_rd=cr&ei=cSbNU4TvNuaK8Qf_joH4Cw&gws_rd=ssl#newwindow=1&q={{variable_get}}">
+      Google
+      </a>
+      </p>
+      <p>
+      <a href="http://search.naver.com/search.naver?where=nexearch&query={{variable_get}}&sm=top_hty&fbm=0&ie=utf8">
+      Naver
+      </a>
+      </p>
+      <p>
+      <a href="http://search.daum.net/search?w=tot&DA=YZR&t__nil_searchbox=btn&sug=&o=&q={{variable_get}}">
+      Daum
+      </a>
+      </p>
+
+    </a>
+   </div>
+
+</body>
+</html>
